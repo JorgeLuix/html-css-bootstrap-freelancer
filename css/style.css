@@ -17,3 +17,19 @@ header,#footer_down{
 #footer_up{
     background-color: var(--around);
 }
+#location, #around, #freelancer h5 {
+    text-transform: uppercase;
+    color: var(--white);
+}
+#location, #freelancer{
+    width: 250px;
+}
+#around {
+    width: 50%;
+} 
+#around i{
+    padding: 8px;
+} 
+#freelancer a{
+    text-decoration: none;
+}
