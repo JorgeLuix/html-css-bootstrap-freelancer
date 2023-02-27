@@ -1,0 +1,19 @@
+:root {
+    --head-black: #2C3E50;
+    --hero: #1ABC9C;
+    --white: #ffffff;
+    --black : #333333;
+    --around: #3A546D;
+}
+header,#footer_down{
+    background-color: var(--head-black);
+}
+#hero,#about {
+    background-color: var(--hero);
+}
+#portafolio, #contact{
+    background-color: var(--white);
+}
+#footer_up{
+    background-color: var(--around);
+}
