@@ -11,17 +11,35 @@
 </head>
 <body>
     <header>
-        <nav class="container text-white d-flex justify-content-between align-items-center py-2">
-            <div class="container-fluid">
-                  <span class="text-uppercase fw-bold text-white">
-                    Start Bootstrap
-                  </span>
+        <nav class=" navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h3 class="text-uppercase text-white">start Bootstrap</h3>
+                </a>
+                <button class="navbar-toggler bg-light" type="button"
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#mynav"
+                  aria-controls="mynav" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynav">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                      <a class="nav-link active text-uppercase text-white" aria-current="page" href="#">portafolio</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link text-uppercase text-white" href="#">about</a>
+                    </li>
+                   
+                    <li class="nav-ite">
+                      <a class="nav-link text-uppercase text-white">contact</a>
+                    </li>
+                  </ul>
+                 
+                </div>
             </div>
-                <ul>
-                    <li><a href="">portafolio</a></li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">contact</a></li>
-                </ul>
             
               
         </nav>
@@ -34,10 +52,8 @@
                         <img src="img/avatar.svg" class="figure-img img-fluid rounded" alt="...">
                         <h1 class="text-white">Start Bootstrap</h1>
                 </figure>
-                    <div class="stella text-white">
-                        <span class="fa-light fa-horizontal-rule"></span>
-                        <span class="fa-solid fa-star"></span>
-                        <span class="fa-solid fa-horizontal-rule"></span>
+                    <div class="stella text-white d-flex mx-auto justify-content-center align-items-center">                       
+                        <span class="fa-solid fa-star"></span>                        
                     </div>
                     <div>
                         <span class="text-white">graphic artist-web designer-illustrator</span>                 
@@ -45,41 +61,40 @@
                    
             </div>
         </section>
-        <section id="portafolio" class="text-uppercase text-center py-4">
-            <h2>portafolio</h2>
-            <div class="stella pb-4">
-                <span class="fa-light fa-horizontal-rule"></span>
-                <span class="fa-solid fa-star"></span>
-                <span class="fa-solid fa-horizontal-rule"></span>
-            </div>
-            <div class="container">
+        <section id="portafolio">
+            <div class="container text-uppercase text-center py-4">
+                <h2>portafolio</h2>
+                <div class="stella text-black d-flex mx-auto justify-content-center align-items-center pb-4">                       
+                    <span class="fa-solid fa-star"></span>                        
+                </div>
+            
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="card mb-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card mb-4 position-relative">
                             <img src="img/cabin.png" class="card-img-top" alt="...">                          
                         </div>                       
                     </div> 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="card mb-4">
                             <img src="img/cake.png" class="card-img-top" alt="...">                          
                         </div>                       
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="card mb-4">
                             <img src="img/circus.png" class="card-img-top" alt="...">                          
                         </div>                       
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="card mb-4">
                             <img src="img/game.png" class="card-img-top" alt="...">                          
                         </div>                       
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="card mb-4">
                             <img src="img/safe.png" class="card-img-top" alt="...">                          
                         </div>                       
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="card mb-4">
                             <img src="img/submarine.png" class="card-img-top" alt="...">                          
                         </div>                       
@@ -90,10 +105,8 @@
         <section id="about" class=" text-center py-4">
             <div class="container">
                 <h2 class="text-white text-uppercase">about</h2>
-                <div class="stella text-white pb-4">
-                    <span class="fa-regular fa-dash"></span>
-                    <span class="fa-solid fa-star"></span>
-                    <span class="fa-solid fa-horizontal-rule"></span>
+                <div class="stella text-white d-flex mx-auto justify-content-center align-items-center pb-4">                       
+                    <span class="fa-solid fa-star"></span>                        
                 </div>
                 <div class="test d-flex text-white">
                     <p class="pe-4 text-start">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
@@ -110,19 +123,30 @@
         <section id="contact" class=" text-uppercase py-4">
             <div class="container">
                 <h2 class="text-center">contact me</h2>
-                <div class="stella pb-4 text-center">
-                    <span class="fa-light fa-horizontal-rule"></span>
-                    <span class="fa-solid fa-star"></span>
-                    <span class="fa-solid fa-horizontal-rule"></span>
-                </div>
-                    <div class="mb-3">
-                
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                <div class="stella text-white d-flex mx-auto justify-content-center align-items-center pb-4">                       
+                    <span class="fa-solid fa-star"></span>                        
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="user-name" class="form-label">Name</label>
+                    <input type="text" class="form-control border-0 border-bottom" 
+                    id="user-name" name="user-name" required>
                 </div>
+                <div class="mb-3">
+                    <label for="user-email" class="form-label">Email Address</label>
+                    <input type="text" class="form-control border-0 border-bottom" 
+                    id="user-email" name="user-email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="user-phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control border-0 border-bottom" 
+                    id="user-phone" name="user-phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control border-0 border-bottom" name="message" name="message"
+                     id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                  <a href="" class="send">Send</a>
             </div>
         </section>
     </main>
